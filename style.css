@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5c4a50;
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+    width: 1100;
+    justify-content: space-between;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0004);
+}
+.container img{
+    max-width: 350px;
+    transform-origin: center;
+    transform: perspective(900px) rotateY(25deg);
+    transition: 1.0s;
+    box-shadow: 5px 5px 20px rgb(132, 23, 23);
+    border-radius: 5px;
+}
+.container:hover img{
+    opacity: 0.3;
+}
+.container img:hover {
+    transform: perspective(900px) rotateY(0deg);
+    opacity: 1;
+}
